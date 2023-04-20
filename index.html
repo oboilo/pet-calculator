@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar"></nav>
+        <div class="main-wrapper">
+            <section class="section_home-header">
+                <div class="padding-global">
+                    <div class="container-medium">
+                        <div class="padding-section-medium">
+                            <h1 class="heading-style-1">Welcome to the calculator</h1>
+                            <h2 class="heading-style-2">Example:</h2>
+                            <div class:="example_wrapper">
+                                <div class="example_row">
+                                    <p>First number = 100</p>
+                                    <p>Second number = 1000</p>
+                                </div>
+                                <div class="example_row">
+                                    <p>Third number = 10</p>
+                                    <p>Result = 100</p>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_home-calculator">
+                <div class="padding-global">
+                    <div class="container-medium">
+                        <div class="padding-section-medium">
+                            <form action="" class="calculator_form">
+                                <div class="calculator_row">
+                                    <div class="calculator_input-box">
+                                        <label for="number-a">Write first number</label>
+                                        <input type="number" name="number-a" id="number-a" class="calculator_number">
+                                    </div>
+                                    <div class="calculator_input-box">
+                                        <label for="number-b">Write second number</label>
+                                        <input type="number" name="number-b" id="number-b" class="calculator_number">
+                                    </div>
+                                </div>
+                                <div class="calculator_row ">
+                                    <div class="calculator_input-box">
+                                        <label for="number-c">Write third number</label>
+                                        <input type="number" name="number-c" id="number-c" class="calculator_number">
+                                    </div>
+                                    <div class="calculator_input-box">
+                                            <label for="result">Result</label>
+                                            <input type="number" name="result" id="result" class="calculator_number">
+                                        </div> 
+                                    </div>
+                            </form>
+                            <p id="result-test"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="calculator-3.js"></script>
+</body>
