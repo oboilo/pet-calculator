@@ -1,6 +1,12 @@
+body {
+    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fafafa;
+}
+
 .page-wrapper {
     overflow: hidden;
-    background-color: blanchedalmond;
+    background: rgb(0,108,255);
+    background: linear-gradient(145deg, rgba(0,108,255,1) -50%, rgba(2,0,36,1) 150%);
 }
 /*
 .navbar {}
@@ -86,9 +92,11 @@
 
 .calculator_form {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
     justify-content: left;
-    gap: 40px;
+    gap: 1rem;
 }
 
 .calculator_row {
@@ -105,5 +113,18 @@
     flex-direction: column;
     justify-content: top;
     align-items: left;
-    gap: 12px;
+    gap: .5rem;
+}
+
+.input-label {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.calculator_input {
+    height: 1.5rem;
+    border: 1px solid #00000050;
+    border-radius: 0.3rem;
+    border: 2px solid #fafafa50;
+    background-color: #fafafa50;
 }
