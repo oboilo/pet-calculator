@@ -7,12 +7,13 @@ body {
 .page-wrapper {
     overflow: hidden;
     background-color: #3E3E46;
+    border-radius: .3rem;
     /* background: rgb(0,108,255);
     background: linear-gradient(145deg, rgba(0,108,255,1) -50%, rgba(2,0,36,1) 150%);
     */
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, link {
     margin: 0;
     padding: 0;
 }
@@ -25,6 +26,22 @@ h2 {
     padding-bottom: .5rem;
 }
 
+a {
+    color: aquamarine;
+    transition: top ease 150ms;
+    cursor:pointer;
+    position: relative;
+    top: 0px;
+}
+a:checked, a:visited {
+    color: aquamarine;
+}
+
+a:hover {
+    color: #fafafa;
+    text-decoration: none;
+    top: -2px;
+}
 /*
 .navbar {}
 
@@ -50,16 +67,27 @@ h2 {
     }
 }
 
-.container-meduim {
+.container-medium {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
     max-width: 90vw;
 }
 
+@media screen and (max-width: 568px) {
+    .container-medium {
+        max-width: 90dvw;
+    }
+}
+
 .padding-section-medium {
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+
+.padding-section-small {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .align-center {
@@ -154,4 +182,9 @@ h2 {
 }
 textarea:focus, input:focus{
     outline: none;
+}
+
+footer {
+    color: #fafafadb;
+    font-size: 14px;
 }
