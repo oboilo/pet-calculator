@@ -1,12 +1,20 @@
+:root {
+    --main-bg-color: #26262B;
+    --second-bg-color: #3E3E46;
+    --white-color: #fafafa;
+    --link-color: aquamarine;
+}
+
 body {
     font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fafafa;
-    background-color: #26262B;
+    color: var(--white-color);
+    background-color: var(--main-bg-color);
 }
+
 
 .page-wrapper {
     overflow: hidden;
-    background-color: #3E3E46;
+    background-color: var(--second-bg-color);
     border-radius: .3rem;
     /* background: rgb(0,108,255);
     background: linear-gradient(145deg, rgba(0,108,255,1) -50%, rgba(2,0,36,1) 150%);
@@ -27,18 +35,18 @@ h2 {
 }
 
 a {
-    color: aquamarine;
+    color: var(--link-color);
     transition: top ease 150ms;
     cursor:pointer;
     position: relative;
     top: 0px;
 }
 a:checked, a:visited {
-    color: aquamarine;
+    color: var(--link-color);
 }
 
 a:hover {
-    color: #fafafa;
+    color: var(--white-color);
     text-decoration: none;
     top: -2px;
 }
@@ -52,7 +60,7 @@ a:hover {
 
 .section-style-dark {
     background-color: rgba(0, 0, 0, 0.15);
-    color: #fafafa;
+    color: var(--white-color);
 }
 
 .padding-global {
@@ -120,7 +128,7 @@ a:hover {
     align-items: start;
     margin-top: 1rem;
     gap: .5rem;
-    border: 2px solid #fafafa;
+    border: 2px solid var(--white-color);
     border-radius: .3rem;
     background-color: #fafafa25;
     backdrop-filter: blur(10px);
@@ -167,18 +175,18 @@ a:hover {
 }
 
 .calculator_input {
-    color: #fafafa;
+    color: var(--white-color);
     height: 1.5rem;
     border-radius: 0.3rem;
     border: 2px solid #fafafa50;
     background-color: #fafafa50;
-    color: #fafafa;
+    color: var(--white-color);
     font-weight: 400;
     padding: .3rem;
 }
 
 .calculator_input:focus{
-    border: 2px solid #fafafa;
+    border: 2px solid var(--white-color);
 }
 textarea:focus, input:focus{
     outline: none;
