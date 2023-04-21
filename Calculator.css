@@ -1,13 +1,30 @@
 body {
     font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
     color: #fafafa;
+    background-color: #26262B;
 }
 
 .page-wrapper {
     overflow: hidden;
-    background: rgb(0,108,255);
+    background-color: #3E3E46;
+    /* background: rgb(0,108,255);
     background: linear-gradient(145deg, rgba(0,108,255,1) -50%, rgba(2,0,36,1) 150%);
+    */
 }
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+h2 {
+    padding-bottom: .5rem;
+}
+
 /*
 .navbar {}
 
@@ -41,17 +58,9 @@ body {
 }
 
 .padding-section-medium {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
-
-.header-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .align-center {
     display: flex;
@@ -64,6 +73,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 }
 
 .align-center-vertical {
@@ -76,34 +86,41 @@ body {
 
 
 .example_wrapper {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    width: 100%;
-    gap: 24px;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 1rem;
+    gap: .5rem;
+    border: 2px solid #fafafa;
+    border-radius: .3rem;
+    background-color: #fafafa25;
+    backdrop-filter: blur(10px);
+    padding: .5rem;
 }
 
-.example_row {
+.example_box {
     display: flex;
-    flex-direction: row;  
-    gap: 24px;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .calculator_form {
     display: flex;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
-    justify-content: left;
+    justify-content: space-between;
     gap: 1rem;
+    width: 100%;
 }
 
 .calculator_row {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    align-items: top;
+    justify-content: flex-start;
+    align-items: start;
     gap: 40px;
 
 }
@@ -112,7 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: top;
-    align-items: left;
+    align-items: start;
     gap: .5rem;
 }
 
@@ -122,9 +139,18 @@ body {
 }
 
 .calculator_input {
-    height: 1.5rem;
-    border: 1px solid #00000050;
-    border-radius: 0.3rem;
+    min-width: 1.5rem;
+    border-radius: 0.2rem;
     border: 2px solid #fafafa50;
     background-color: #fafafa50;
+    color: #fafafa;
+    font-weight: 400;
+    padding: .3rem;
+}
+
+.calculator_input:focus{
+    border: 2px solid #fafafa;
+}
+textarea:focus, input:focus{
+    outline: none;
 }
