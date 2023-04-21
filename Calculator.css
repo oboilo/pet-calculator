@@ -139,8 +139,9 @@ h2 {
 }
 
 .calculator_input {
-    min-width: 1.5rem;
-    border-radius: 0.2rem;
+    color: #fafafa;
+    height: 1.5rem;
+    border-radius: 0.3rem;
     border: 2px solid #fafafa50;
     background-color: #fafafa50;
     color: #fafafa;
