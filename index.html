@@ -13,25 +13,16 @@
 <body>
     <div class="page-wrapper">
         <nav class="navbar"></nav>
-        <div class="main-wrapper">
-            <!--
-            <section class="section_home-header">
-                <div class="padding-global">
-                    <div class="container-medium">
-                        <div class="padding-section-medium">
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            -->
+        <main class="main-wrapper">
             <section class="section_home-calculator">
                 <div class="padding-global">
                     <div class="container-medium">
                         <div class="padding-section-medium">
-                            <h1 class="heading-style-1">Welcome to the proportion calculator</h1>
-                            <h2 class="heading-style-2">Example:</h2>
-                            <div class="example_wrapper">
+                            <header class="header-wrapper align-center-vertical">
+                                <h1 class="heading-style-1">Welcome to the proportion calculator</h1>
+                                <h2 class="heading-style-2">Example:</h2>    
+                            </header>
+                            <div class="example_wrapper align-center-vertical">
                                 <div class="example_box">
                                     <p>First number = 100</p>
                                     <p>Second number = 1000</p>
@@ -41,26 +32,29 @@
                                     <p>Result = 100</p>                            
                                 </div>
                             </div>
-                            <form action="" class="calculator_form">
+                            <form action="" class="calculator_form align-center-vertical">
                                 <div class="calculator_row">
                                     <div class="calculator_input-box">
-                                        <label for="number-a" class="input-label">First number</label>
+                                        <label for="number-a" class="calculator_input-label">First number</label>
                                         <input type="number" name="number-a" id="number-a" class="calculator_input">
                                     </div>
                                     <div class="calculator_input-box">
-                                        <label for="number-b" class="input-label">Second number</label>
+                                        <label for="number-b" class="calculator_input-label">Second number</label>
                                         <input type="number" name="number-b" id="number-b" class="calculator_input">
                                     </div>
                                 </div>
                                 <div class="calculator_row ">
                                     <div class="calculator_input-box">
-                                        <label for="number-c" class="input-label">Third number</label>
+                                        <label for="number-c" class="calculator_input-label">Third number</label>
                                         <input type="number" name="number-c" id="number-c" class="calculator_input">
                                     </div>
                                     <div class="calculator_input-box">
-                                            <label for="result" class="input-label">Result</label>
+                                            <label for="result" class="calculator_input-label">Result</label>
                                             <input type="number" name="result" id="result" class="calculator_input">
                                         </div> 
+                                    </div>
+                                    <div class="calculator_row">
+                                        <input type="reset" class="calculator_input-reset">
                                     </div>
                             </form>
                             <p id="result-test"></p>
@@ -71,14 +65,16 @@
             <footer class="section_home-footer">
                 <div class="padding-global">
                     <div class="container-medium">
-                        <div class="padding-section-small">
-                            <p>V1.0</p>
-                            <p>Made by <a rel="prefetch" href="https://linktr.ee/oboilo">oboilo</a></p>
+                        <div class="padding-section-small align-center">
+                            <div class="copyright-wrapper">
+                                <p>V1.0</p>
+                                <p>Made by <a rel="prefetch" href="https://linktr.ee/oboilo">oboilo</a></p>    
+                            </div>
                         </div>
                     </div>
                 </div>
             </footer>
-        </div>
+        </main>
     </div>
     <script src="calculator.js"></script>
 </body>
