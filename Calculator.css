@@ -22,7 +22,11 @@ body {
     */
 }
 
-h1, h2, h3, p, link {
+h1,
+h2,
+h3,
+p,
+link {
     margin: 0;
     padding: 0;
 }
@@ -43,7 +47,8 @@ a {
     top: 0px;
 }
 
-a:checked, a:visited {
+a:checked,
+a:visited {
     color: var(--link-color);
 }
 
@@ -52,6 +57,7 @@ a:hover {
     text-decoration: none;
     top: -2px;
 }
+
 /*
 .navbar {}
 
@@ -155,7 +161,8 @@ a:hover {
     flex-direction: row;
     justify-content: flex-start;
     align-items: start;
-    gap: 40px;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .calculator_input-box {
@@ -179,6 +186,7 @@ a:hover {
     font-size: .9rem;
     transition: var(--transition-all);
 }
+
 .calculator_input-reset:hover {
     color: aquamarine;
     cursor: pointer;
@@ -195,10 +203,12 @@ a:hover {
     padding: .3rem;
 }
 
-.calculator_input:focus{
+.calculator_input:focus {
     border: 2px solid var(--white-color);
 }
-textarea:focus, input:focus{
+
+textarea:focus,
+input:focus {
     outline: none;
 }
 
