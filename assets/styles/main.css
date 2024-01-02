@@ -1,0 +1,29 @@
+:root {
+    /* Colors 
+    --color-bg-primary: #26262B;
+    --color-bg-secondary: #3E3E46;
+    --color-white: #ffffff;
+    --color-grey-50: #F9FAFB;
+    --color-grey-100: #F2F4F7;
+    --color-grey-300: #D0D5DD;
+    --color-grey-500: #667085;
+    --color-grey-700: #344054;
+    --color-grey-800: #1D2939;
+    --color-grey-900: #101828;
+    --color-link: aquamarine;
+    --transition-all: all ease 150ms; */
+
+    /* Typography */
+    --font-main: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    border-color: $alt-gray-900;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--color-bg-primary);
+        background-color: var(--color-grey-900);
+    }
+}

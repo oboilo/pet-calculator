@@ -7,111 +7,96 @@
     <meta name="description" content="The proportion calculator" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The proportion calculator</title>
-    <link rel="icon" type="image/x-icon" href="/media/icon.svg" />
-    <link rel="stylesheet" href="/calculator.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/media/favicon/icon.svg"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
   </head>
 
-  <body>
+  <body class="bg-alt-gray-25">
     <div class="page-wrapper">
-      <nav class="navbar"></nav>
-      <main class="main-wrapper">
-        <section class="section_home-calculator">
-          <div class="padding-global">
-            <div class="container-medium">
-              <div class="padding-section-medium">
-                <header class="header-wrapper align-center-vertical">
-                  <h1 class="heading-style-1">
-                    Welcome to the proportion calculator
-                  </h1>
-                  <h2 class="heading-style-2">Example:</h2>
-                </header>
-                <div class="example_wrapper align-center-vertical">
-                  <div class="example_box">
-                    <p>First number = 100</p>
-                    <p>Second number = 1000</p>
-                  </div>
-                  <div class="example_box">
-                    <p>Third number = 10</p>
-                    <p>Result = 100</p>
-                  </div>
-                </div>
-                <form action="" class="calculator_form align-center-vertical">
-                  <div class="calculator_row">
-                    <div class="calculator_input-box">
-                      <label for="number-a" class="calculator_input-label"
-                        >First number</label
-                      >
-                      <input
-                        type="number"
-                        name="number-a"
-                        id="number-a"
-                        class="calculator_input"
-                      />
-                    </div>
-                    <div class="calculator_input-box">
-                      <label for="number-b" class="calculator_input-label"
-                        >Second number</label
-                      >
-                      <input
-                        type="number"
-                        name="number-b"
-                        id="number-b"
-                        class="calculator_input"
-                      />
-                    </div>
-                  </div>
-                  <div class="calculator_row">
-                    <div class="calculator_input-box">
-                      <label for="number-c" class="calculator_input-label"
-                        >Third number</label
-                      >
-                      <input
-                        type="number"
-                        name="number-c"
-                        id="number-c"
-                        class="calculator_input"
-                      />
-                    </div>
-                    <div class="calculator_input-box">
-                      <label for="result" class="calculator_input-label"
-                        >Result</label
-                      >
-                      <input
-                        type="number"
-                        name="result"
-                        id="result"
-                        class="calculator_input"
-                      />
-                    </div>
-                  </div>
-                  <div class="calculator_row">
-                    <input type="reset" class="calculator_input-reset" />
-                  </div>
-                </form>
-                <p id="result-test"></p>
-              </div>
+      <div class="container bg-alt-gray-100 py-5">
+        <div class="row">
+          <div class="col">
+            <div class="p-3 text-center">
+              <h1>Welcome to the proportion calculator</h1>
             </div>
           </div>
-        </section>
-        <footer class="section_home-footer">
-          <div class="padding-global">
-            <div class="container-medium">
-              <div class="padding-section-small align-center">
-                <div class="copyright-wrapper">
-                  <p>V1.0</p>
-                  <p>
-                    Made by
-                    <a rel="prefetch" href="https://oboilo.com" target="_blank"
-                      >oboilo</a
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <form class="w-75 mx-auto">
+              <!-- First Row -->
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="firstNumber" class="form-label"
+                      >First Number</label
                     >
-                  </p>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="firstNumber"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="secondNumber" class="form-label"
+                      >Second Number</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="secondNumber"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <!-- Second Row -->
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="thirdNumber" class="form-label"
+                      >Third Number</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="thirdNumber"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="result" class="form-label">Result</label>
+                    <input type="number" class="form-control" id="result" />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-        </footer>
-      </main>
+        </div>
+      </div>
     </div>
-    <script src="calculator.js"></script>
   </body>
 </html>
