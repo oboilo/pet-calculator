@@ -1,102 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Oleh Boilo" />
-    <meta name="description" content="The proportion calculator" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The proportion calculator</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/media/favicon/icon.svg"
-    />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/main.min.css" />
-    <link rel="stylesheet" href="/assets/styles/main.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Oleh Boilo" />
+  <meta name="description" content="The proportion calculator" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The proportion calculator</title>
+  <link rel="icon" type="image/x-icon" href="./assets/media/favicon/icon.svg" />
 
-  <body class="bg-alt-gray-25">
-    <div class="page-wrapper">
-      <div class="container bg-alt-gray-100 py-5">
-        <div class="row">
-          <div class="col">
-            <div class="p-3 text-center">
-              <h1>Welcome to the proportion calculator</h1>
+  <!-- Styles -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+
+</head>
+
+<body class="bflex h-full flex-col g-slate-100">
+  <div class="flex min-h-full flex-col">
+    <main class="flex-auto">
+      <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div class="mx-auto max-w-2xl">
+          <h1 class="text-4xl font-medium tracking-tight text-gray-900">Welcome to the proportion calculator</h1>
+
+          <form action="">
+            <div class="space-y-12">
+              <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                  <label for="first-number" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                  <div class="mt-2">
+                    <input type="number" name="first-number" id="first-number"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  </div>
+                </div>
+                <div class="sm:col-span-3">
+                  <label for="second-number" class="block text-sm font-medium leading-6 text-gray-900">Second
+                    name</label>
+                  <div class="mt-2">
+                    <input type="number" name="second-number" id="second-number"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  </div>
+                </div>
+                <div class="sm:col-span-3">
+                  <label for="third-name" class="block text-sm font-medium leading-6 text-gray-900">Third name</label>
+                  <div class="mt-2">
+                    <input type="number" name="third-number" id="third-number"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  </div>
+                </div>
+                <div class="sm:col-span-3">
+                  <label for="result" class="block text-sm font-medium leading-6 text-gray-900">Result</label>
+                  <div class="mt-2">
+                    <input type="number" name="result" id="result"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <form class="w-75 mx-auto">
-              <!-- First Row -->
-              <div class="row">
-                <div class="col">
-                  <div class="mb-3">
-                    <label for="firstNumber" class="form-label"
-                      >First Number</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="firstNumber"
-                    />
-                    <div id="emailHelp" class="form-text">
-                      We'll never share your email with anyone else.
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="mb-3">
-                    <label for="secondNumber" class="form-label"
-                      >Second Number</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="secondNumber"
-                    />
-                    <div id="emailHelp" class="form-text">
-                      We'll never share your email with anyone else.
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Second Row -->
-              <div class="row">
-                <div class="col">
-                  <div class="mb-3">
-                    <label for="thirdNumber" class="form-label"
-                      >Third Number</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="thirdNumber"
-                    />
-                    <div id="emailHelp" class="form-text">
-                      We'll never share your email with anyone else.
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="mb-3">
-                    <label for="result" class="form-label">Result</label>
-                    <input type="number" class="form-control" id="result" />
-                    <div id="emailHelp" class="form-text">
-                      We'll never share your email with anyone else.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
-    </div>
-  </body>
+    </main>
+  </div>
+  <script src="./assets/scripts/calculator.js"></script>
+</body>
+
 </html>

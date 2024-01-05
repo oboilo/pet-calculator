@@ -1,6 +1,6 @@
-var numOne = document.getElementById("number-a");
-var numTwo = document.getElementById("number-b");
-var numThree = document.getElementById("number-c");
+var numOne = document.getElementById("first-number");
+var numTwo = document.getElementById("second-number");
+var numThree = document.getElementById("third-number");
 var result = document.getElementById("result");
 
 numOne.addEventListener("input", add);
