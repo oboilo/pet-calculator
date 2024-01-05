@@ -1,117 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Oleh Boilo" />
-    <meta name="description" content="The proportion calculator" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The proportion calculator</title>
-    <link rel="icon" type="image/x-icon" href="/media/icon.svg" />
-    <link rel="stylesheet" href="/calculator.css" />
-  </head>
 
-  <body>
-    <div class="page-wrapper">
-      <nav class="navbar"></nav>
-      <main class="main-wrapper">
-        <section class="section_home-calculator">
-          <div class="padding-global">
-            <div class="container-medium">
-              <div class="padding-section-medium">
-                <header class="header-wrapper align-center-vertical">
-                  <h1 class="heading-style-1">
-                    Welcome to the proportion calculator
-                  </h1>
-                  <h2 class="heading-style-2">Example:</h2>
-                </header>
-                <div class="example_wrapper align-center-vertical">
-                  <div class="example_box">
-                    <p>First number = 100</p>
-                    <p>Second number = 1000</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Oleh Boilo" />
+  <meta name="description" content="The proportion calculator" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The proportion calculator</title>
+  <link rel="icon" type="image/x-icon" href="/media/icon.svg" />
+  <link rel="stylesheet" href="./calculator.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <nav class="navbar"></nav>
+    <main class="main-wrapper">
+      <section class="section_home-calculator">
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="padding-section-medium">
+              <header class="header-wrapper align-center-vertical">
+                <h1 class="heading-style-1">
+                  Welcome to the proportion calculator
+                </h1>
+                <h2 class="heading-style-2">Example:</h2>
+              </header>
+              <div class="example_wrapper align-center-vertical">
+                <div class="example_box">
+                  <p>First number = 100</p>
+                  <p>Second number = 1000</p>
+                </div>
+                <div class="example_box">
+                  <p>Third number = 10</p>
+                  <p>Result = 100</p>
+                </div>
+              </div>
+              <form action="" class="calculator_form align-center-vertical">
+                <div class="calculator_row">
+                  <div class="calculator_input-box">
+                    <label for="number-a" class="calculator_input-label">First number</label>
+                    <input type="number" name="number-a" id="number-a" class="calculator_input" />
                   </div>
-                  <div class="example_box">
-                    <p>Third number = 10</p>
-                    <p>Result = 100</p>
+                  <div class="calculator_input-box">
+                    <label for="number-b" class="calculator_input-label">Second number</label>
+                    <input type="number" name="number-b" id="number-b" class="calculator_input" />
                   </div>
                 </div>
-                <form action="" class="calculator_form align-center-vertical">
-                  <div class="calculator_row">
-                    <div class="calculator_input-box">
-                      <label for="number-a" class="calculator_input-label"
-                        >First number</label
-                      >
-                      <input
-                        type="number"
-                        name="number-a"
-                        id="number-a"
-                        class="calculator_input"
-                      />
-                    </div>
-                    <div class="calculator_input-box">
-                      <label for="number-b" class="calculator_input-label"
-                        >Second number</label
-                      >
-                      <input
-                        type="number"
-                        name="number-b"
-                        id="number-b"
-                        class="calculator_input"
-                      />
-                    </div>
+                <div class="calculator_row">
+                  <div class="calculator_input-box">
+                    <label for="number-c" class="calculator_input-label">Third number</label>
+                    <input type="number" name="number-c" id="number-c" class="calculator_input" />
                   </div>
-                  <div class="calculator_row">
-                    <div class="calculator_input-box">
-                      <label for="number-c" class="calculator_input-label"
-                        >Third number</label
-                      >
-                      <input
-                        type="number"
-                        name="number-c"
-                        id="number-c"
-                        class="calculator_input"
-                      />
-                    </div>
-                    <div class="calculator_input-box">
-                      <label for="result" class="calculator_input-label"
-                        >Result</label
-                      >
-                      <input
-                        type="number"
-                        name="result"
-                        id="result"
-                        class="calculator_input"
-                      />
-                    </div>
+                  <div class="calculator_input-box">
+                    <label for="result" class="calculator_input-label">Result</label>
+                    <input type="number" name="result" id="result" class="calculator_input" />
                   </div>
-                  <div class="calculator_row">
-                    <input type="reset" class="calculator_input-reset" />
-                  </div>
-                </form>
-                <p id="result-test"></p>
+                </div>
+                <div class="calculator_row">
+                  <input type="reset" class="calculator_input-reset" />
+                </div>
+              </form>
+              <p id="result-test"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section_home-footer">
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="padding-section-small align-center">
+              <div class="copyright-wrapper">
+                <p>V1.0</p>
+                <p>
+                  Made by
+                  <a rel="prefetch" href="https://oboilo.com" target="_blank">oboilo</a>
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        <footer class="section_home-footer">
-          <div class="padding-global">
-            <div class="container-medium">
-              <div class="padding-section-small align-center">
-                <div class="copyright-wrapper">
-                  <p>V1.0</p>
-                  <p>
-                    Made by
-                    <a rel="prefetch" href="https://oboilo.com" target="_blank"
-                      >oboilo</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </main>
-    </div>
-    <script src="calculator.js"></script>
-  </body>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="./calculator.js"></script>
+</body>
+
 </html>
